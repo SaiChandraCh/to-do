@@ -13,8 +13,7 @@ export default class Main extends Component {
     for(let index=0;index<this.props.newItemCount;index++){
       a.push(<textarea>empty</textarea>)
     }  
-    
-    return this.state.notes;
+    return a;
   }
 
   render() {

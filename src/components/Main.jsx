@@ -4,16 +4,19 @@ export default class Main extends Component {
   constructor(props){
     super(props);
     this.state ={
-      notes : [<textarea className="note">empty</textarea>]
+      notes : []
     }
   }
 
   notes = () => {
-    var a = []
+    this.state.notes = []
+    // for(let index=0;index<this.props.newItemCount;index++){
+    //   this.state.notes.push(<textarea name={"description"+index+1} defaultValue=""></textarea>)
+    // }
     for(let index=0;index<this.props.newItemCount;index++){
-      a.push(<textarea>empty</textarea>)
-    }  
-    return a;
+      this.state.notes.push(<div className="todo-note"><textarea name={"description"+index+1} defaultValue=""></textarea></div>)
+    }
+    return this.state.notes;
   }
 
   render() {

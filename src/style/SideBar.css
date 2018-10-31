@@ -1,0 +1,22 @@
+.todo-sidebar{
+    position: relative;
+}
+.todo-sidebar input[type=image]{
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+.todo-sidebar input[type=button]:nth-child(2){
+    margin-top: 30px; 
+}
+.todo-sidebar input[type=button]{
+    display: block;
+    width: 100%;
+    margin: 2px 0px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+}
+
+

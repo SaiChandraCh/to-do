@@ -1,0 +1,35 @@
+.todo-header{
+    display: flex;
+    height: 250px !important;
+}
+.todo-header-panel-1{
+    flex:1;
+}
+.todo-header-panel-2{
+    flex:6;
+}
+.todo-searchbar{
+    display: inline-block;
+    border: 1px solid gainsboro;
+    border-radius: 25px;
+    width: 300px !important;
+    height: 30px;
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+}
+.todo-searchbar input{
+    margin: none;
+    border: none;
+    outline: none;
+    padding: 0px 8px;
+    background: transparent;
+}
+.todo-searchbar input[type=image]{
+    float: right;
+}
+.todo-searchbar input[type=text]{
+    margin-bottom: auto;
+    position: absolute;
+    width: 275px;
+}
